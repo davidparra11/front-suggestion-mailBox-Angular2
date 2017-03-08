@@ -1,17 +1,17 @@
 <div class="row">
-    <h5 class="text-center text-muted">Person List</h5>
+    <h5 class="text-center text-muted">Lista de Sugerencias.</h5>
     <hr>
     <div class="pull-right" style="margin-bottom: 10px;">
         <button class="btn btn-md btn-success" [routerLink]="['PersonCreate']">
-            Add new Person
+            Nueva Sugerencia
         </button>
     </div>
 </div>
 <div class="row">
     <div class="list-group" *ngFor="#person of persons | async">
         <a href="#" class="list-group-item clearfix">
-            <span class="glyphicon glyphicon-file"></span>
-            name: {{ person.name }}, email: {{ person.email }}, mobile: {{ person.mobile }}
+            <span class="glyphicon glyphicon-envelope"></span>
+            Nombre: {{ person.name }}, Email: {{ person.email }}, Celular: {{ person.mobile }}
             <span class="pull-right">
  
                 <button class="btn btn-md btn-success" [routerLink]="['PersonDetail', {id:person.id}]">
@@ -30,3 +30,4 @@
     </div>
     <person-remove [person]="selectedPerson"></person-remove>
 </div>
+

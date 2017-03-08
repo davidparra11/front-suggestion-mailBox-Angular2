@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class Api
 {
-    apiUrl: string = "http://localhost:8000/api/api/person";
+    apiUrl: string = "http://localhost:8000/api/api/person/";
     headers: Headers = new Headers;
     persons$: Observable<Form[]>;
     private _personObserver: Observer<Form[]>;

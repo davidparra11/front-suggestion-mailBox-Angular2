@@ -31,7 +31,7 @@ System.register(["angular2/http", "angular2/core", 'rxjs/Rx', 'rxjs/Observable',
                 function Api(_http) {
                     var _this = this;
                     this._http = _http;
-                    this.apiUrl = "http://localhost:8000/api/api/person";
+                    this.apiUrl = "http://localhost:8000/api/api/person/";
                     this.headers = new http_1.Headers;
                     this.headers.append('Content-Type', 'application/x-www-form-urlencoded');
                     this.headers.append('X-Requested-With', 'XMLHttpRequest');

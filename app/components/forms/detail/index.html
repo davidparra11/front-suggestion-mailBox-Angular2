@@ -1,9 +1,9 @@
 
-<h5 class="text-center text-muted">Detalle Persona de {{ person.name }}</h5>
+<h5 class="text-center text-muted">Sugerencia de: {{ person.name }} | {{ person.mobile }}  </h5>
 <hr>
 <a href="#" class="list-group-item clearfix">
-    <span class="glyphicon glyphicon-file"></span>
-    Author: {{ person.author }}, Name: {{ person.name }}
+    <span class="glyphicon glyphicon-envelope"></span>
+    Sugerencia: {{ person.suggest }}
     <span class="pull-right">
  
         <button class="btn btn-md btn-success" [routerLink]="['Persons']">
