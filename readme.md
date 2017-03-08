@@ -5,4 +5,5 @@
 ## FrontEnd
 
 1- Si ya se tiene instalado Node JS correr npm install dentro del main root del directorio.
+
 2 Para levatar el servidor, se debe correr en la linea de comandos: npm start
