@@ -1,0 +1,29 @@
+<div *ngIf="errors">
+    <div class="alert alert-danger" *ngFor="#error of errors">
+        {{ error }}
+    </div>
+</div>
+ 
+<h5 class="text-center text-muted" *ngIf="isUpdate">Editar el curso {{ person.name }}</h5>
+<form role="form">
+    <div class="form-group">
+        <label class="sr-only" for="name">name</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="person.name" placeholder="name">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="email">email</label>
+        <input type="text" id="email" class="form-control" [(ngModel)]="person.email" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="mobile">mobile</label>
+        <input type="text" id="mobile" class="form-control" [(ngModel)]="person.mobile" placeholder="mobile">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="suggest">suggest</label>
+        <input type="text" id="suggest" class="form-control" [(ngModel)]="person.suggest" placeholder="suggest">
+    </div>
+    <div class="form-group">
+        <input type="button" (click)="processPerson(person)" class="btn btn-success" [value]="action">
+        <a class="btn btn-info" [routerLink]="['/Persons']" *ngIf="isUpdate">List persons</a>
+    </div>
+</form>
