@@ -11,20 +11,14 @@
     <div class="list-group" *ngFor="#person of persons | async">
         <a href="#" class="list-group-item clearfix">
             <span class="glyphicon glyphicon-envelope"></span>
-            Nombre: {{ person.name }}, Email: {{ person.email }}, Celular: {{ person.mobile }}
+            Nombre: {{ person.name }} | Email: {{ person.email }} | Celular: {{ person.mobile }}
             <span class="pull-right">
  
                 <button class="btn btn-md btn-success" [routerLink]="['PersonDetail', {id:person.id}]">
                     <span class="glyphicon glyphicon-search"></span>
                 </button>
  
-                <button class="btn btn-md btn-info" [routerLink]="['PersonEdit', {id:person.id}]">
-                    <span class="glyphicon glyphicon-pencil"></span>
-                </button>
- 
-                <button href="#remove-person" data-toggle="modal" class="btn btn-md btn-danger" (click)="selectedPerson = person">
-                    <span class="glyphicon glyphicon-trash"></span>
-                </button>
+                
           </span>
         </a>
     </div>

@@ -12,7 +12,6 @@ import {
 @RouteConfig([
     {path:'/persons',           name: 'Persons',        component: PersonListComponent},
     {path:'/persons/:id',       name: 'PersonDetail',   component: PersonDetailComponent},
-    {path:'/persons/edit/:id',  name: 'PersonEdit',     component: PersonEditComponent},
     {path:'/persons/create',    name: 'PersonCreate',   component: PersonCreateComponent},
     {path:'/', name: 'root', redirectTo: ['/Persons']}
 ])

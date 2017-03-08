@@ -1,4 +1,4 @@
-System.register(["angular2/core", "../forms/PersonListComponent", "../forms/edit/PersonEditComponent", "../forms/create/PersonCreateComponent", "../forms/detail/PersonDetailComponent", 'angular2/router'], function(exports_1, context_1) {
+System.register(["angular2/core", "../forms/PersonListComponent", "../forms/create/PersonCreateComponent", "../forms/detail/PersonDetailComponent", 'angular2/router'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["angular2/core", "../forms/PersonListComponent", "../forms/edit
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, PersonListComponent_1, PersonEditComponent_1, PersonCreateComponent_1, PersonDetailComponent_1, router_1;
+    var core_1, PersonListComponent_1, PersonCreateComponent_1, PersonDetailComponent_1, router_1;
     var InitComponent;
     return {
         setters:[
@@ -19,9 +19,6 @@ System.register(["angular2/core", "../forms/PersonListComponent", "../forms/edit
             },
             function (PersonListComponent_1_1) {
                 PersonListComponent_1 = PersonListComponent_1_1;
-            },
-            function (PersonEditComponent_1_1) {
-                PersonEditComponent_1 = PersonEditComponent_1_1;
             },
             function (PersonCreateComponent_1_1) {
                 PersonCreateComponent_1 = PersonCreateComponent_1_1;
@@ -40,7 +37,6 @@ System.register(["angular2/core", "../forms/PersonListComponent", "../forms/edit
                     router_1.RouteConfig([
                         { path: '/persons', name: 'Persons', component: PersonListComponent_1.PersonListComponent },
                         { path: '/persons/:id', name: 'PersonDetail', component: PersonDetailComponent_1.PersonDetailComponent },
-                        { path: '/persons/edit/:id', name: 'PersonEdit', component: PersonEditComponent_1.PersonEditComponent },
                         { path: '/persons/create', name: 'PersonCreate', component: PersonCreateComponent_1.PersonCreateComponent },
                         { path: '/', name: 'root', redirectTo: ['/Persons'] }
                     ]),

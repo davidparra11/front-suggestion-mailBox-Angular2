@@ -27,7 +27,7 @@ System.register(['angular2/core', "../../services/api", 'angular2/router'], func
             PersonListComponent = (function () {
                 function PersonListComponent(_api) {
                     this._api = _api;
-                    this.selectedCourse = {};
+                    this.selectedPerson = {};
                     this.persons = this._api.persons$;
                     this._api.getperson();
                 }

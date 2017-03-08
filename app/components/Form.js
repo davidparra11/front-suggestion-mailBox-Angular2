@@ -27,13 +27,13 @@ System.register(['angular2/core', "../services/api", 'angular2/router'], functio
             FormComponent = (function () {
                 function FormComponent(_api) {
                     this._api = _api;
-                    this.selectedCourse = {};
+                    this.selectedPerson = {};
                     this.persons = this._api.persons$;
                     this._api.getperson();
                 }
                 FormComponent = __decorate([
                     core_1.Component({
-                        templateUrl: './app/components/courses/detail/index.html',
+                        templateUrl: './app/components/forms/detail/index.html',
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [api_1.Api])

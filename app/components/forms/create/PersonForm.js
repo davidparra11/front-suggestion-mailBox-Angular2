@@ -51,6 +51,7 @@ System.register(['angular2/core', 'angular2/router', "../../../services/api"], f
                         }
                     });
                 };
+                //método para actualizar el registr.
                 PersonsForm.prototype.update = function (person) {
                     var _this = this;
                     var person_string = this._personString(person);

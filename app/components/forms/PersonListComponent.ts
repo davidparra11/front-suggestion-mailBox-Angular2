@@ -14,7 +14,7 @@ import {
 export class PersonListComponent
 {
     persons: Object;
-    selectedCourse: Object = {};
+    selectedPerson: Object = {};
     constructor(private _api: Api)
     {
         this.persons = this._api.persons$;

@@ -45,7 +45,7 @@ export class PersonsForm {
             }
         );
     }
- 
+    //método para actualizar el registr.
     update(person)
     {
         let person_string = this._personString(person);
